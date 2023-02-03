@@ -154,3 +154,48 @@ label:hover {
     width: 750px;
     object-fit: cover;
 }
+
+#check1:checked~.container .gallery .pic {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check2:checked~.container .gallery .landscape {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check2:checked~.container .gallery .logo,
+#check2:checked~.container .gallery .other {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+#check3:checked~.container .gallery .logo {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check3:checked~.container .gallery .landscape,
+#check3:checked~.container .gallery .other {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+#check4:checked~.container .gallery .other {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+#check4:checked~.container .gallery .landscape,
+#check4:checked~.container .gallery .logo {
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+}
